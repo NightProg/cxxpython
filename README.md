@@ -72,7 +72,7 @@ main(int argc, char *argv[])
     /* Optionally import the module; alternatively,
        import can be deferred until the embedded script
        imports it. */
-    PyObject *pmodule = cxx_python.import("spam");
+    CxxPyObject *pmodule = cxx_python.import("spam");
     if (!pmodule) {
         cxx_python.raise_error();
     }
