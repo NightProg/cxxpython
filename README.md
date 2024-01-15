@@ -52,7 +52,7 @@ CxxPyInit_spam(void)
 int
 main(int argc, char *argv[])
 {
-    wchar_t *program = CxxPyUtil::decodeLocale(argv[0], NULL);
+    wchar_t *program = CxxPyUtil::decodeLocale(argv[0], nullptr);
     if (program == nullptr) {
         std::cerr << "Fatal error: cannot decode argv[0]" << std::endl;
         exit(1);
