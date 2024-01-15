@@ -60,7 +60,7 @@ main(int argc, char *argv[])
 
     CxxPython cxx_python { program };
   
-    if (python.appendInitTab("spam", CxxPyInit_spam) == -1) {
+    if (cxx_python.appendInitTab("spam", CxxPyInit_spam) == -1) {
         std::cerr << "Error: could not extend in-built modules table" << std::endl;
         exit(1);
     }
